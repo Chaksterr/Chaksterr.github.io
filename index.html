@@ -42,7 +42,10 @@ nav ul{min-width:0;flex:1;display:flex;justify-content:center;gap:24px;list-styl
 .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:var(--surface);border-radius:999px;padding:5px 16px;font-size:13px;color:var(--muted);margin-bottom:20px}
 .pill i{width:8px;height:8px;border-radius:50%;background:#38bdf8}
 h1{font-size:clamp(34px,6vw,52px);line-height:1.15;margin:0 0 18px;font-weight:800;letter-spacing:-.03em}
-.wave{display:inline-block;margin-right:14px;vertical-align:-2px}
+.wave{display:inline-block;margin-right:14px;vertical-align:-2px;transform-origin:70% 80%;animation:wave 1.6s ease-in-out .6s 2}
+.wave:hover{animation:wave 1.6s ease-in-out}
+@keyframes wave{0%,60%,100%{transform:rotate(0)}10%,30%{transform:rotate(14deg)}20%{transform:rotate(-8deg)}40%{transform:rotate(-4deg)}50%{transform:rotate(10deg)}}
+@media (prefers-reduced-motion:reduce){.wave,.wave:hover{animation:none}}
 .titles{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 20px}
 .titles .tag{font-size:15px;padding:4px 16px}
 .lead{color:var(--muted);max-width:72ch;margin:0 0 28px;font-size:18px;line-height:1.7}
@@ -240,7 +243,7 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 120px)}
 
 <script>
 var P=[
-{t:"Churnhouse – Telecom Churn Lakehouse",c:"data devops",d:"End-to-end lakehouse that predicts which telecom customers will churn and explains why. Medallion layers on Iceberg/MinIO, dbt on Trino with PII masking, 35 data tests, a nightly Airflow pipeline, a Superset dashboard built as code, and CI on GitHub Actions. The high-risk band churns 83% of the time, against 12% for the low band.",x:["Trino","dbt","Iceberg","MinIO","Airflow","Superset","Docker","GitHub Actions"],u:"https://github.com/Chaksterr/churnhouse"},
+{t:"Churnhouse – Telecom Churn Lakehouse",c:"data devops",d:"End-to-end lakehouse (Iceberg, dbt on Trino, Airflow) that predicts which telecom customers will churn and explains why. High-risk customers churn at 83%, against 12% for low-risk ones.",x:["Trino","dbt","Iceberg","MinIO","Airflow","Superset","Docker","GitHub Actions"],u:"https://github.com/Chaksterr/churnhouse"},
 {t:"MLOps Pipeline Architecture",c:"ai data",d:"Pipeline forecasting French electricity demand (XGBoost, Prophet, Holt-Winters) with Prefect, DVC/MinIO and MLflow. The best model is served via BentoML with Evidently drift detection and Streamlit.",x:["Prefect","DVC","MLflow","BentoML","Evidently"]},
 {t:"AI Campus Learning Platform",c:"ai web",cup:true,d:"Multilingual RAG platform with auto-generated quizzes, flashcards, Tunisian-dialect audio and a professor dashboard.",x:["Qdrant","Gemini","FastAPI","RAG"]},
 {t:"Hyrio – AI-Powered Recruitment Platform",c:"ai web",d:"Full-stack ATS platform built at KPIT integrating local LLMs (Ollama) for automated candidate scoring, CV parsing, and pipeline insights, alongside Google Workspace OAuth2 automation (Calendar, Meet, Gmail, Forms).",x:["React","TypeScript","FastAPI","PostgreSQL","Ollama","Llama 3.2","Tailwind"],u:"https://github.com/Chaksterr/Hyrio"},
