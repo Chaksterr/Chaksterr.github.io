@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ahmed Chakcha · Portfolio</title>
-<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <style>
@@ -161,7 +161,7 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 120px)}
     <li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-actions">
-    <a class="btn cvtop" id="cv" href="assets/Ahmed-Chakcha_CV.pdf" download="Ahmed-Chakcha_CV.pdf">
+    <a class="btn cvtop" id="cv" href="assets/Ahmed_Chakcha_CV.pdf" download="Ahmed_Chakcha_CV.pdf">
       <svg class="ic" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
       <span class="hide-sm">Download </span>CV
     </a>
@@ -196,7 +196,7 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 120px)}
   <section id="about" class="about">
     <div class="head"><h2>About</h2></div>
     <p>I'm an engineering student focused on <b>AI Engineering</b>, Data &amp; MLOps, and DevOps &amp; Cloud, passionate about building reliable, secure, and scalable systems.</p>
-    <p>Through my internships and projects, I've gained hands-on experience with LLM, <b>AI agents</b> and RAG, data pipelines , <b>Kubernetes</b>, Infrastructure as Code, <b>GitOps</b>, and CI/CD, while developing AI agents and automation workflows.</p>
+    <p>Through my internships and projects, I've gained hands-on experience with LLMs, <b>AI agents</b> and RAG, data pipelines, <b>Kubernetes</b>, Infrastructure as Code, <b>GitOps</b>, and CI/CD, while developing AI agents and automation workflows.</p>
     <p>I enjoy bridging infrastructure, data, and AI to turn complex requirements into automated and maintainable solutions.</p>
     <p>I'm looking for a <b>6-month PFE internship starting February 2027</b>.</p>
   </section>
@@ -240,6 +240,7 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 120px)}
 
 <script>
 var P=[
+{t:"Churnhouse – Telecom Churn Lakehouse",c:"data devops",d:"End-to-end lakehouse that predicts which telecom customers will churn and explains why. Medallion layers on Iceberg/MinIO, dbt on Trino with PII masking, 35 data tests, a nightly Airflow pipeline, a Superset dashboard built as code, and CI on GitHub Actions. The high-risk band churns 83% of the time, against 12% for the low band.",x:["Trino","dbt","Iceberg","MinIO","Airflow","Superset","Docker","GitHub Actions"],u:"https://github.com/Chaksterr/churnhouse"},
 {t:"MLOps Pipeline Architecture",c:"ai data",d:"Pipeline forecasting French electricity demand (XGBoost, Prophet, Holt-Winters) with Prefect, DVC/MinIO and MLflow. The best model is served via BentoML with Evidently drift detection and Streamlit.",x:["Prefect","DVC","MLflow","BentoML","Evidently"]},
 {t:"AI Campus Learning Platform",c:"ai web",cup:true,d:"Multilingual RAG platform with auto-generated quizzes, flashcards, Tunisian-dialect audio and a professor dashboard.",x:["Qdrant","Gemini","FastAPI","RAG"]},
 {t:"Hyrio – AI-Powered Recruitment Platform",c:"ai web",d:"Full-stack ATS platform built at KPIT integrating local LLMs (Ollama) for automated candidate scoring, CV parsing, and pipeline insights, alongside Google Workspace OAuth2 automation (Calendar, Meet, Gmail, Forms).",x:["React","TypeScript","FastAPI","PostgreSQL","Ollama","Llama 3.2","Tailwind"],u:"https://github.com/Chaksterr/Hyrio"},
@@ -265,7 +266,7 @@ var D=[
 ];
 var S=[
 ["Artificial Intelligence","LangChain,LangGraph,RAG,Fine-tuning,NLP,Computer Vision,Hugging Face,TensorFlow,FastAPI,MLflow,Metaflow,DVC,Prefect,BentoML,Evidently AI,Great Expectations,Microsoft Foundry,OpenAI API,Google Gemini,LLM Agents"],
-["Data & Visualization","ETL,ELT,Batch Processing,Streaming,PySpark,Hadoop,YARN,Hive,Airflow,Talend,Pentaho,PostgreSQL,MongoDB,Neo4j,Memgraph,MinIO,Power BI,Apache Superset,Plotly,Streamlit"],
+["Data & Visualization","ETL,ELT,Batch Processing,Streaming,PySpark,Hadoop,YARN,Hive,Airflow,dbt,Trino,Apache Iceberg,Talend,Pentaho,PostgreSQL,MongoDB,Neo4j,Memgraph,MinIO,Power BI,Apache Superset,Plotly,Streamlit"],
 ["DevOps & IaC","Docker,Kubernetes,Helm,Terraform,Ansible,Vagrant,Jenkins,GitLab CI/CD,GitHub Actions,Argo CD,SonarQube,Trivy,Nexus Repository,HashiCorp Nomad"],
 ["Cloud & Monitoring","Azure,GCP,CloudStack,Virtualization,Linux,HAProxy,Traefik,Prometheus,Grafana,Loki"],
 ["Languages & Tools","Python,C/C++,Java,SQL/PLSQL,TypeScript,React,Git"]
