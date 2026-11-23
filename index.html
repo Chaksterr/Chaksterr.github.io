@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
+<script>try{if(localStorage.getItem("theme"))document.documentElement.setAttribute("data-theme",localStorage.getItem("theme"));}catch(e){}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ahmed Chakcha · Portfolio</title>
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -42,7 +43,7 @@ main,footer{position:relative;z-index:1}
 header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--border);z-index:11}
 .logo{font-weight:800;color:var(--text);text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;gap:10px}
 .logo svg,.logo-mark{flex:none}
-.logo-mark{display:block;border-radius:9px;box-shadow:0 4px 14px -4px color-mix(in srgb,var(--accent) 60%,transparent);transition:transform .4s cubic-bezier(.3,1.6,.5,1)}
+.logo-mark{display:block;transition:transform .4s cubic-bezier(.3,1.6,.5,1)}
 .logo:hover .logo-mark{transform:rotate(-8deg) scale(1.08)}
 nav ul a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;white-space:nowrap;transition:color .2s ease}
 nav ul a:hover{color:var(--text)}
@@ -319,7 +320,7 @@ html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 120px)}
 
 <header><div class="wrap"><nav>
   <a class="logo" href="#home">
-    <img class="logo-mark" src="assets/favicon.svg" alt="" width="34" height="34">Chaksterr
+    <svg class="logo-mark" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M20.72 9.28A9.5 9.5 0 1 0 20.72 22.72" fill="none" stroke="currentColor" stroke-width="4.6" stroke-linecap="round"/><circle cx="27.2" cy="24.6" r="2.7" fill="var(--accent)"/></svg>Chaksterr
   </a>
   <ul>
     <li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li>
@@ -477,6 +478,10 @@ var P=[
 {t:"Agentic AI Assistant for Football Analytics",c:"ai",d:"LangChain agent with tools for player form, fatigue, injuries, opponents and weather to support coaches.",x:["LangChain","Llama","Streamlit","Tavily"],u:"https://github.com/Chaksterr/Brentford-FC-Analytics"},
 {t:"RepoBox",c:"data",d:"GitHub analytics platform that collects, analyzes and visualizes repository data using graph, document and cache databases, with interactive dashboards.",x:["Python","Graph DB","Document DB","Dashboards"],u:"https://github.com/Chaksterr/RepoBox"},
 {t:"Hadoop Lab",c:"data devops",d:"Hadoop 3.3.6 clusters built as Infrastructure as Code with Vagrant and Ansible, one per branch: HDFS/YARN with Spark, high availability with automatic NameNode failover (ZooKeeper, JournalNodes), and Hive + HBase.",x:["Hadoop","Spark","Hive","HBase","ZooKeeper","Ansible","Vagrant"],u:"https://github.com/Chaksterr/Hadoop-LAB"},
+{t:"Cagnotte – Blockchain Crowdfunding",c:"web other",d:"Decentralized crowdfunding platform on Ethereum where smart contracts hold the funds. Creators withdraw only after approval by at least 50% of donors, and every donor is refunded if the goal is missed.",x:["Solidity","Hardhat","Ethereum","ethers.js","MetaMask","React","Tailwind CSS"],u:"https://github.com/Chaksterr/Crowdfunding-blockchain"},
+{t:"HAGate – High-Availability Two-Site Network",c:"devops",d:"Two-site infrastructure automated with Vagrant and Ansible. OPNsense handles NAT and the IPsec gateway, while HAProxy and Keepalived share a virtual IP for failover in front of an Apache/PHP and MySQL stack.",x:["OPNsense","IPsec","HAProxy","Keepalived","Ansible","Vagrant"],u:"https://github.com/Chaksterr/HAGate"},
+{t:"Athletalk – Individual Sports News",c:"web",d:"Responsive web platform for fans of golf, tennis, boxing, UFC, MotoGP and F1, with user accounts, dedicated news pages and event countdowns, plus a calendar and leaderboard for Formula 1.",x:["PHP","JavaScript","HTML","CSS","Figma"],u:"https://github.com/P0TER19/ATHLETALK"},
+{t:"Matrix Manipulator",c:"web other",d:"Python and Streamlit web app for generating and manipulating different types of matrices, with user login and a history of each user's operations.",x:["Python","Streamlit","Poetry"],u:"https://github.com/chameauu/Matrix_Manipulator"},
 {t:"MPA Metaheuristics",c:"other",d:"Implementation of the Marine Predators Algorithm (MPA), a nature-inspired metaheuristic based on Lévy flight and Brownian motion, benchmarked on CEC2017 functions with interactive Streamlit visualization.",x:["Python","Optimization","Metaheuristics","CEC2017","Streamlit"],u:"https://github.com/MohamedYassineAbid/MPA-metaheuristics"},
 {t:"Technologies Sémantiques",c:"data other",d:"Semantic Web project modeling maritime transport with RDF, RDFS, SPARQL, OWL and SWRL.",x:["RDF","SPARQL","OWL","SWRL"],u:"https://github.com/Chaksterr/Technologies-Semantiques"},
 {t:"Hospital Management System",c:"web",d:"Multi-tenant healthcare backend built with Spring Boot 3 and vertical TDD, featuring schema-per-tenant isolation, Spring Security with JWT, role-based access control (RBAC), and automated integration testing.",x:["Java","Spring Boot","Spring Security","JWT","MySQL","Hibernate","TDD"],u:"https://github.com/Chaksterr/Hospital-Management-System"},
